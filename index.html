@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New App</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="blogs.css" />
+  </head>
+  <body>
+    <!-- nav body********************* -->
+
+    <nav class="nav">
+      <div class="main-nav container flex">
+        <a href="#" onClick="reload() ">
+          <img src="company-logo.png" alt="company logo" class="company-logo" />
+        </a>
+        <div class="nav-links">
+          <ul class="ul-nav flex">
+            <li class="head nav-item" id="ipl" onclick="onNavItemClick('ipl')">
+              IPL
+            </li>
+
+            <li
+              class="head nav-item"
+              id="finance"
+              onclick="onNavItemClick('finance')"
+            >
+              Finance
+            </li>
+
+            <li
+              class="head nav-item"
+              id="Politics"
+              onclick="onNavItemClick('Politics')"
+            >
+              Politics
+            </li>
+
+            <li
+              class="head nav-item"
+              id="Technology"
+              onclick="onNavItemClick('Technology')"
+            >
+              Technology
+            </li>
+          </ul>
+        </div>
+        <div class="serach-bar flex">
+          <input
+            type="text"
+            class="new-input"
+            placeholder="e.g Science"
+            id="new-input"
+          />
+          <button class="serach-button" id="serach-button">Search</button>
+        </div>
+        <div id="menu-icon" class="bx bx-menu"></div>
+      </div>
+      
+    </nav>
+
+    <!-- main body**************** -->
+    <main class="main">
+      <div class="card-container  flex" id="cards-container"></div>
+    </main>
+    <template id="template-new-card">
+      <div class="card">
+        <div class="card-header">
+          <img
+            src="https://via.placeholder.com/400x200"
+            alt="new-image"
+            class="img"
+            id="new-image"
+          />
+        </div>
+        <div class="card-containt">
+          <h3 id="news-title"></h3>
+          <h6 class="news-sourse" id="news-sourse"></h6>
+          <p class="news-desc" id="news-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+            temporibus nam veritatis fugit libero recusandae sequi quibusdam,
+            natus unde ad laboriosam labore tempore dolore omnis cumque atque,
+            quae, nisi aliquam.
+          </p>
+        </div>
+      </div>
+    </template>
+
+    <script src="blogsscript.js"></script>
+  </body>
+</html>
